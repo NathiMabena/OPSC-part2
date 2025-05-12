@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A3367"
+    tools:context=".WelcomePage">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/whiteBg"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/heartPNG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/heart"
+            app:layout_constraintTop_toTopOf="@id/whiteBg"
+            app:layout_constraintBottom_toBottomOf="@id/whiteBg"
+            app:layout_constraintStart_toStartOf="@id/whiteBg"
+            app:layout_constraintEnd_toEndOf="@id/whiteBg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO MIDDLE MAN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintTop_toBottomOf="@+id/whiteBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/continueBtn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#A055FF"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteBg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

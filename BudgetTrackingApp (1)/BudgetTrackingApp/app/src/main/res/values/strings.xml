@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">BudgetTrackingApp</string>
+
+
+    <string name="option1">🎯 I want to track my daily expenses</string>
+    <string name="option2">📊 Stick to a budget</string>
+    <string name="option3">💰 Start saving money</string>
+    <string name="option4">📉 Understand where my money goes</string>
+    <string name="option5">🧭 Just exploring</string>
+    <string name="option6">🌍 Other</string>
+    <string name="back">Back</string>
+
+
+    <string name="option_food">🍔 Food and Groceries</string>
+    <string name="option_entertainment">🎮 Entertainment</string>
+    <string name="option_transport">🚌 Transport</string>
+    <string name="option_shopping">🛍️ Shopping</string>
+    <string name="option_fun">🎉 Fun</string>
+    <string name="option_houseRent">🏠 Rent</string>
+
+    <string name="option_yesplan"> Yes guide me through it</string>
+    <string name="option_noplan"> No not at the moment</string>
+
+    <string name="option_rent">🏠 I rent</string>
+    <string name="option_own"> I own</string>
+    <string name="option_other">🌍 Other</string>
+
+    <string name="option_yesMortgage"> Yes</string>
+    <string name="option_noMortgage"> No</string>
+
+    <string name="option_carLoans"> Car Loans</string>
+    <string name="option_studentLoans"> Student Loans</string>
+    <string name="option_personalLoans"> Personal Loans</string>
+    <string name="option_laybay"> Laybay</string>
+    <string name="option_creditCard"> Credit Card</string>
+    <string name="option_other1"> Other</string>
+
+    <string name="option_walk"> Walk</string>
+    <string name="option_bike"> Bike</string>
+    <string name="option_publicTransport"> Public Transport</string>
+    <string name="option_car"> Car</string>
+    <string name="option_other2"> Other</string>
+
+    <string name="option_tv"> TV streaming (Disney+, Netflix, Prime Video) </string>
+    <string name="option_gym"> Gym (Virgin Active, PlanetFitness)</string>
+    <string name="option_music"> Music (Spotify, Youtube Music, Soundcloud) </string>
+    <string name="option_other3"> Other</string>
+
+    <string name="option_newbaby"> New baby</string>
+    <string name="option_newcar"> New Car</string>
+    <string name="option_vacation"> Vacation</string>
+    <string name="option_newhouse"> New house</string>
+    <string name="option_other4"> Other</string>
+
+
+    <style name="SelectableOption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#6A4FA3</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/background_text</item>
+    </style>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>
+

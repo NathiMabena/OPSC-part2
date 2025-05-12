@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A3367"
+    tools:context=".OnboardingScreen6">
+
+    <ImageButton
+        android:id="@+id/backArrow5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:src="@drawable/baseline_arrow_back"
+        android:contentDescription="Go back"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <ProgressBar
+        android:id="@+id/topProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:progress="50"
+        android:max="100"
+        android:progressTint="#B983FF"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintTop_toBottomOf="@id/backArrow5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blueCurveBg"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/blue_curve_bg"
+        app:layout_constraintTop_toBottomOf="@id/topProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- MM Text -->
+        <TextView
+            android:id="@+id/mmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            android:textSize="150sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Cake PNG -->
+        <ImageView
+            android:id="@+id/housePNG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/house"
+            app:layout_constraintTop_toTopOf="@id/mmText"
+            app:layout_constraintBottom_toBottomOf="@id/mmText"
+            app:layout_constraintStart_toStartOf="@id/mmText"
+            app:layout_constraintEnd_toEndOf="@id/mmText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionText"
+        android:text="DO YOU HAVE A MORTGAGE?"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/blueCurveBg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="38dp"/>
+
+    <Button
+        android:id="@+id/yesMortgageBtn"
+        style="@style/SelectableOption"
+        android:text="@string/option_yesMortgage"
+        android:layout_width="400dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/questionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/noMortgageBtn"
+        style="@style/SelectableOption"
+        android:text="@string/option_noMortgage"
+        android:layout_width="400dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/yesMortgageBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
